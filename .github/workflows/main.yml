@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: Linux
+    steps:
+      # Check out the repository code
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: |
+          npm install
+          npm run build
+          ls
+          rm -rf /root/tucik/frontend/web/dist
+          mv ./dist /root/tucik/frontend/web
+      - name: Refresh
+        run: systemctl restart tucik-frontend
