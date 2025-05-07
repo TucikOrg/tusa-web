@@ -21,3 +21,4 @@ jobs:
           mv ./dist /root/tucik/frontend/web
       - name: Refresh
         run: systemctl restart tucik-frontend
+

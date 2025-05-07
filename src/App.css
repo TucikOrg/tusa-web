@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+.logo-image {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
@@ -26,6 +33,8 @@
 .logo-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .logo-text {

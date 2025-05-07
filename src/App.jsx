@@ -7,6 +7,7 @@ function App() {
       {/* Header */}
       <header className="header">
         <div className="logo-container">
+          <img src="/planet.png" alt="Tucik Logo" className="logo-image" />
           <h2 className="logo-text">Tucik</h2>
         </div>
         <nav className="nav">
